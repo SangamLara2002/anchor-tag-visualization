@@ -7,7 +7,7 @@ const App = () => {
     { id: 3, x: 200, y: 300 },
   ];
 
-  const [tag, setTag] = useState({ x: 0, y: 0 });
+  const [tag, setTag] = useState({ x: Math.random() * 400, y: Math.random() * 400 });
 
   // useEffect(() => {
   //   const fetchTagPosition = async () => {
@@ -57,7 +57,7 @@ const App = () => {
         position: "relative",
         width: "500px",
         height: "500px",
-        border: "2px solid black",
+        border: "3px solid black",
         margin: 'auto'
       }}>
         {/* Rest of your existing render code remains the same */}
